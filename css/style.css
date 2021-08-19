@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 400;
+  src:
+  url('../fonts/MullerRegular.woff2') format('woff2'),
+  url('../fonts/MullerRegular.woff') format('woff');
+}
+
 body{
  width: 1100px;
  margin: 0 auto;
@@ -79,26 +88,67 @@ p{
 
 .price{
   margin: 0 0 30px 0;
+  padding: 40px 0;
+  background-color: aquamarine;
   display: flex;
   justify-content: center;
 }
 
 .price-table{
-  font-size: 32px;
+  font-size: 26px;
   border: 1px solid black;
   border-collapse: collapse;
 }
 
 
 
-.price-table th{
-  padding: 5px 15px;
+.price-th{
+  font-size: 32px;
+  font-weight: 600;
+  padding: 15px 25px;
+  background-color: darkorchid;
+  border: 2px solid black;
+}
+
+.price-td{
+  padding: 15px 25px;
   border: 1px solid black;
 }
 
-.price-table td{
-  padding: 5px 15px;
-  border: 1px solid black;
+.news{
+  margin: 0 0 50px 0;
+  font-family: Muller;
+  font-weight: 400;
+}
+
+.news-h2{
+  text-align: center;
+  font-size: 32px;
+}
+
+.news-blocks{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.news-block{
+  width: 300px;
+  text-align: justify;
+}
+
+.news-block-img{
+  width: 300px;
+  border: 0px solid;
+  border-radius: 30px;
+}
+
+.news-block-name{
+  font-size: 28px;
+}
+
+.news-block-text{
+  font-size: 24px;
 }
 
 .form{
@@ -108,9 +158,22 @@ p{
   align-items: center;
 }
 
+label{
+  margin: 0 0 15px 0;
+  font-size: 20px;
+}
+
 input{
   width: 200px;
   margin: 0 0 20px 0;
+  border: 1px solid greenyellow;
+  border-radius: 12px;
+}
+
+.btn{
+  padding: 10px 20px;
+  background: #ffffff;
+  font-size: 20px;
 }
 
 .comment{
@@ -121,11 +184,17 @@ input{
 }
 
 .comment-select{
+  padding: 10px;
   margin-bottom: 20px;
+  border: 1px solid greenyellow;
+  border-radius: 12px;
 }
 
 .comment-text{
   width: 600px;
+  padding: 10px;
   margin-bottom: 20px;
+  border: 1px solid greenyellow;
+  border-radius: 12px;
 }
 

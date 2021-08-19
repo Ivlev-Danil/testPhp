@@ -17,18 +17,9 @@
         <li class="header-item"><a href="#">О нас</a></li>
       </ul>
     </nav>
-
   </header>
   <main class="main">
     <div class="container">
-      <h1 class="h1"><strong>Company</strong></h1>
-      <p class="about">
-        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit.</em> Dolor error blanditiis modi voluptate rem enim ratione fugit facilis, molestiae nobis aut, mollitia nam suscipit distinctio nulla esse tenetur corporis necessitatibus.
-        Debitis quaerat voluptas quod, architecto placeat sit ducimus dolor repudiandae optio! Ullam animi cupiditate, dolore molestias enim quos quas illo quis eligendi rem quae iste quisquam dicta. Saepe, molestias natus.
-        Consectetur officia id unde facere a est asperiores, eligendi itaque eius tempora. Aspernatur, laboriosam! Tenetur aperiam atque nam at. Repellat ullam natus quasi inventore sint explicabo ut mollitia eaque nemo!
-        Sequi ex sapiente perspiciatis, id unde atque placeat porro ducimus? Ad est eum quod sit sed facilis ducimus non asperiores ullam blanditiis libero tempore, sunt, mollitia, vel suscipit doloribus possimus.
-        Perspiciatis iure vel minus impedit neque commodi in vitae ex totam ipsam perferendis exercitationem, eos at nihil illo delectus, tempore quaerat aliquid nesciunt itaque? Quo, nostrum? Suscipit fuga ex reprehenderit.
-      </p>
       <div class="benefits">
         <p>Наши преимущества:</p>
         <ol class="benefits-ol">
@@ -40,21 +31,48 @@
       <div class="price">
         <table class="price-table">
           <caption>Таблица</caption>
+          <thead>
+            <tr class="price-tr">
+              <th class="price-th">Наименование</th>
+              <th class="price-th">Цена</th>
+              <th class="price-th">Описание</th>
+            </tr>
+          </thead>
           <tr class="price-tr">
-            <th class="price-th">Продукт 1</th>
-            <td class="price-td">Цена: 555</td>
+            <td class="price-td">Продукт 1</td>
+            <td class="price-td">555 рублей</td>
+            <td class="price-td"><em>Очень хороший продукт1</em></td>
           </tr>
           <tr class="price-tr">
-            <th class="price-th">Продукт 2</th>
-            <td class="price-td">Цена: 675</td>
+            <td class="price-td">Продукт 2</td>
+            <td class="price-td">675 рублей</td>
+            <td class="price-td"><em>Очень хороший продукт2</em></td>
           </tr>
         </table>
+      </div>
+      <div class="news">
+        <h2 class="news-h2">Новости</h2>
+        <div class="news-blocks">
+          <div class="news-block">
+            <img src="img/1.jpg" alt="" class="news-block-img">
+            <p class="news-block-name"><strong>В США аферист подал в суд на своих жертв и стал миллионером</strong></p>
+            <p class="news-block-text">Осужденный за мошенничество американец подал иск к своим жертвам и отсудил у них 12,5 млн долларов. Об этом сообщает New York Post.</p>
+          </div>
+          <div class="news-block">
+            <img src="img/2.jpg" alt="" class="news-block-img">
+            <p class="news-block-name"><strong>Полиция Литвы пообещала "использовать газ с вакциной" против протестующих</strong></p>
+            <p class="news-block-text">Литовская полиция ответила шуткой на сообщения о том, что правоохранители действовали незаконно на протестах 10 августа. Таким образом, согласно заявлению правоохранителей, они ответили на обвинения в распылении "газа с инфекцией".</p>
+          </div>
+          <div class="news-block">
+            <img src="img/3.jpg" alt="" class="news-block-img">
+            <p class="news-block-name"><strong>Украинец сделал татуировку Зеленского на ноге</strong></p>
+            <p class="news-block-text">В Украине сфотографировали мужчину с татуировкой портрета президента Украины Владимира Зеленского на левой ноге.</p>
+          </div>
+        </div>
       </div>
       <form action="" method="POST" class="form">
         <label for="checkbox">Согласны?</label>
         <input type="checkbox" name="" id="checkbox">
-        <label for="color">Выбери цвет</label>
-        <input type="color" name="" id="color">
         <label for="text">Имя</label>
         <input type="text" id="text">
         <label for="date">Дата рождения</label>
@@ -63,8 +81,6 @@
         <input type="email" name="" id="email">
         <label for="password">Пароль</label>
         <input type="password" name="" id="password">
-        <label for="file">Выберите файл</label>
-        <input type="file" name="" id="file">
         <input type="hidden" name="">
         <label for="number">Оценка от 0 до 10</label>
         <input type="number" name="" id="number">
@@ -76,17 +92,17 @@
         <input type="range" name="" id="range">
         <label for="tel">Телефон</label>
         <input type="tel" name="" id="tel">
-        <input type="submit" value="Отправить">
+        <input type="submit" value="Отправить"  class="btn">
       </form>
 
       <div class="comment">
         <select name="" id="" class="comment-select">
-          <option value="value1">Значение 1</option>
-          <option value="value2">Значение 2</option>
-          <option value="value3">Значение 3</option>
+          <option value="value1">Не понравилось</option>
+          <option value="value2">Нормально</option>
+          <option value="value3">Понравилось</option>
         </select>
         <textarea name="" id="" class="comment-text" cols="30" rows="10" value="" placeholder="Оставь комментарий и выбери значение"></textarea>
-        <input type="button" value="Отправить"  class="comment-btn">
+        <input type="button" value="Отправить"  class="btn">
       </div>
     </div>
   </main>
